@@ -35,10 +35,10 @@
         | passiert wo: {{selectedReport.happened_where || '-'}} / passiert am: {{selectedReport.happened_at || '-'}}
       hr
       div: b teaser:
-      div(v-html='selectedReport.teaser' contenteditable @blur='onTeaserEdit')
+      .report-teaser(v-html='selectedReport.teaser' contenteditable @blur='onTeaserEdit')
       hr
       div: b {{selectedReport.name}} schrieb:
-      div.report-text(v-html='selectedReport.text' contenteditable @blur='onTextEdit')
+      .report-text(v-html='selectedReport.text' contenteditable @blur='onTextEdit')
 </template>
 
 <script lang="ts">
@@ -98,7 +98,8 @@ export default defineComponent({
           report.happened_at = DateTime.fromISO(report.happened_at).toFormat('dd.MM.yyyy') || report.happened_at
         }
         report.text = report.text
-          .replace(/[\n\r]+/g, '<br/><br/>')
+          //.replace(/\r\n/g, '<br/>')
+          //.replace(/[\r\n]/g, '<br/>')
           .replaceAll('\\"', '"')
           .replaceAll("\\'", "'")
         if (report.teaser)
@@ -124,7 +125,14 @@ export default defineComponent({
         return
       }
       if (!_.isEmpty(editReport)) {
-        _.assign(selectedReport.value, editReport)
+        //if (editReport.text) {
+        //  const text = editReport.text
+        //    .replace(/\r\n/g, '<br/>')
+        //    .replace(/[\r\n]/g, '<br/>')
+        //  _.assign(selectedReport.value, editReport)
+        //} else {
+          _.assign(selectedReport.value, editReport)
+        //}
         saveReport.run()
       }
     })
@@ -213,6 +221,7 @@ li
     overflow hidden
     text-overflow ellipsis
     display -webkit-box
+    white-space pre
     -webkit-line-clamp 2
     -webkit-box-orient vertical
   .info
@@ -233,6 +242,9 @@ li
   display flex
   flex-direction column
   flex-grow 1
+
+.report-text, .report-teaser
+  white-space pre
 
 .dropdown
   display inline-block
