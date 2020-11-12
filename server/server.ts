@@ -4,7 +4,7 @@ import {getDb} from './src/database'
 import {Report, ReportStatus} from './src/entity/Report'
 import {User} from './src/entity/User'
 import {Not, FindConditions, ILike} from 'typeorm'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 const fastify = Fastify({logger: true})
 fastify.register(cors)
