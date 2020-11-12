@@ -75,7 +75,7 @@ fastify.get<{Querystring: IReportQuery}>('/reports', async (req, res) => {
   }
 })
 
-fastify.listen(process.env.PORT || 3000, (err, address) => {
+fastify.listen(process.env.PORT || 3000, '0.0.0.0', (err, address) => {
   if (err) throw err
   fastify.log.info(`server listening on ${address}`)
 })
