@@ -221,7 +221,7 @@ li
     overflow hidden
     text-overflow ellipsis
     display -webkit-box
-    white-space pre
+    white-space pre-line
     -webkit-line-clamp 2
     -webkit-box-orient vertical
   .info
@@ -244,7 +244,7 @@ li
   flex-grow 1
 
 .report-text, .report-teaser
-  white-space pre
+  white-space pre-line
 
 .dropdown
   display inline-block
