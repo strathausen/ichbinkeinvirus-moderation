@@ -5,9 +5,18 @@ import {Report, ReportStatus} from './src/entity/Report'
 import {User} from './src/entity/User'
 import {Not, FindConditions, ILike} from 'typeorm'
 import * as _ from 'lodash'
+import fastifyStatic from 'fastify-static'
+import * as path from 'path'
+
+const staticDir = process.env.NODE_ENV === 'production' ?
+  path.join(__dirname, 'public') :
+  path.join(__dirname, '..', 'web', 'dist')
 
 const fastify = Fastify({logger: true})
 fastify.register(cors)
+fastify.register(fastifyStatic, {
+  root: staticDir
+})
 
 type IReportQuery = {
   search: string,
