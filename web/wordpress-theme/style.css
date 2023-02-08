@@ -1,0 +1,364 @@
+/*
+ Theme Name:   Astra Child
+ Template:     astra
+ Description:  the template for ichbinkeinvirus.org
+*/
+
+/*== FONT STYLES - Susa ==*/
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'Inter',Helvetica Neue,Helvetica,Arial,sans-serif;
+	line-height: 164.5%;
+	color: #565656;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+h1, h2 {
+	font-family: 'Overpass',Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight: 900;
+}
+
+h1 {
+	letter-spacing: -1.17px !important;
+}
+
+h2 {
+	letter-spacing: -0.87px;
+}
+body h3, h4, h5, h6 {
+	font-family: 'Inter',Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+body h4, h6 {
+	font-weight: 600;
+}
+
+h5 {
+	text-transform: uppercase !important;
+	letter-spacing: 2.33px;
+	color:#565656;
+}
+
+/*Header*/
+
+.main-header-menu > .menu-item > a {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: normal;
+}
+
+/*Footer*/
+
+.site-footer .footer-adv .widget-title {
+	font-weight: 600;
+	letter-spacing: normal;
+}
+.footer-adv a {
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.11px;
+	color:#a1a1a1 !important;
+}
+
+.site-footer .footer-adv .widget-title {
+		font-size: 1.25rem;
+}
+
+/*Button - Text*/
+
+#ctf-more > span, #button_alle_berichte > span > span, .footer-adv-widget > div > div > p button a, .elementor-button-text,#sbi_load > a > span.sbi_btn_text, .footer-adv-widget button a p  {
+	font-weight: 500;
+	font-size: 16px;
+	font-size: 0.875rem !important;
+	letter-spacing: 2.33px;
+	text-transform: uppercase !important;
+}
+
+.footer-adv-widget button a p {
+	color: #000;
+}
+
+/*== FONT STYLES END - Susa ==*/
+
+/*==BUTTON STYLES - Susa==*/
+
+/*BUTTON Instagram Plugin */
+a.sbi_load_btn {
+	border-radius: 0 !important;
+	/*padding: 15px 35px !important;*/
+	padding: 20px 40px !important;
+	}
+/*BUTTONS Footer */
+
+.footer-adv button {
+	background-color: white;
+	width: 100%;
+	padding: 15px 35px !important;
+}
+.footer-adv button:hover {
+	background-color: #BDBDBD;
+}
+
+/*==BUTTONS STYLES END - Susa==*/
+
+/*==INTERACTION STYLES - Susa*/
+
+a href, .presse a {
+	color: #000 !important;
+}
+
+a href:hover, a href:active, a href:visited; .presse a href:focus, .presse a href:hover, .presse a href:active, .presse a href:visited; .presse a href:focus,  {
+	color: #565656;
+	color: red;
+	text-decoration: underline;
+	text-underline-position:under;
+}
+
+/*==INTERACTION STYLES END - Susa*/
+
+
+/*LAYOUT - Susa*/
+.footer-adv-overlay {
+	padding-bottom: 1rem;
+}
+
+.ast-footer-overlay {
+	padding-top: 0px;
+}
+
+@media (min-width: 760px) {
+	
+	.footer-adv-widget-1 {
+		width: 20%;
+	}
+	
+	.footer-adv-widget-2
+	{
+		width: 15%;
+	}
+ 	.footer-adv-widget-3
+	{
+	width: 32.5%;
+	}
+	
+	 .footer-adv-widget-4
+	{
+	width: 32.5%;
+	}
+	
+}
+@media (max-width: 759px) {
+	.footer-adv-widget {
+	width: 50%;
+	}
+	.footer-adv-widget:nth-child(2n+1) {
+    clear: left;
+	}
+}
+	
+
+@media (max-width: 544px) {
+	.footer-adv-widget  {
+    width: 100%;
+	}
+}
+
+
+/*LAYOUT ENDE - Susa*/
+
+/*body {
+	color: black; !important;
+}*/
+
+
+/* >> Links | by Ngan | 29.05.2020
+div#content.site-content article a {
+	color: #565656 !important;
+	text-decoration: underline !important;
+}
+
+div.elementor-widget-container div.elementor-button-wrapper div.elementor-button-link.elementor-button a {
+	color: #ffffff !important;
+	text-decoration: none !important;
+}
+
+
+<< Links | by Ngan | 29.05.2020 */
+
+
+/* .presse a {
+	color: green !important;
+	text-underline-position:under;
+}
+
+*/
+
+
+
+
+.entry-title {
+	padding-bottom: 1em !important; 
+}
+
+ul {
+	list-style: none;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container--margin {
+	margin-top: 4rem !important;
+	margin-bottom: 4rem;
+}
+
+.button-container-erfahrungsberichte {
+	margin-bottom:4em;
+}
+
+button {
+	background-color: black;
+	border-radius: 0 !important;
+}
+
+button.menu-toggle.main-header-menu-toggle.ast-mobile-menu-buttons-minimal {
+	padding: 0 !important;
+}
+
+button a {
+	color: white;
+}
+
+button a:hover {
+	color: white;
+	text-decoration: none !important;
+}
+
+.button-subpages {
+	padding: 0.5em 1.8em;
+}
+
+a#ctf-more.ctf-more, .button-form {
+	/* for centering button */
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	/* style */
+	width: 200px !important;
+	border-radius: 0 !important;
+	margin-top: 2em !important;
+	padding: 0.7em !important;
+	/*font-size: medium;*/
+}
+
+
+a#ctf-more.ctf-more:hover {
+	background-color: #474747 !important;
+}
+
+a.sbi_load_btn {
+	/*width: 200px !important
+	border-radius: 0 !important;
+	
+	font-size: medium !important;*/
+	margin-top: 4em !important;
+}
+
+/*
+ * Weiterlesen
+ * */
+
+.weiterlesen {
+	background: grey;
+}
+
+
+/*
+ * Presse
+ * */
+
+div.presse {
+	border-bottom: 1px solid black; 
+	margin: 1.4em 0px; 
+	padding-bottom: 1.4em; 
+	padding-left: 0;
+}
+
+
+/**  
+ * Erfahrungsberichte
+ * **/
+
+.page-erfahrungsberichte-info {
+	margin-bottom: 0rem;
+}
+
+.erfahrungsberichte-info-fontsize {
+	font-size: medium;
+}
+
+/**
+ * Über uns 
+**/
+
+.entry-title {
+	font-weight: 900;
+}
+
+/*
+ * Mobilgeräte
+ * */
+
+
+@media (max-width: 480px) {
+	
+	div.elementor-text-editor.elementor-clearfix span {
+		font-size: medium !important;
+	}
+
+	h1 {
+		font-size: larger !important;
+		margin-top: 10px;
+	}
+	
+	div.elementor-widget-wrap {
+		display: flex;
+	}
+	
+	div.elementor-element.elementor-element-740704d.elementor-column.elementor-col-50.elementor-inner-column {
+		order: 1;
+	}
+	
+}
+
+.ibkv-form .form-control,
+.ibkv-form .custom-select {
+	border-color: black;
+	border-radius: 0px;
+}
+
+.elementor .ctf-tweet-text a {
+	color: #000;
+}
+/*.elementor .ctf-tweet-text a:visited,*/
+.elementor .ctf-tweet-text a:hover,
+.elementor .ctf-tweet-text a:active,
+.elementor .ctf-tweet-text a:focus {
+	color: #565656;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+/*footer.site-footer .footer-adv a:visited,*/
+footer.site-footer .footer-adv a:active,
+footer.site-footer .footer-adv a:focus,
+footer.site-footer .footer-adv a:hover {
+	color: white!important;
+}

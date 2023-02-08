@@ -1,0 +1,47 @@
+/*
+
+.page-erfahrungsberichte-info {
+	margin-top: 10px;
+	font-size: 0.7em;
+}
+
+.report-teaser {
+	font-weight: 500; 
+	margin-bottom: 1em;
+}
+
+.report-card .report-teaser a {
+	color: black;
+	text-decoration: none;
+}
+
+.weiterlesen {
+	color: #474747;
+	padding-left: 5px;
+}
+
+.report-card.col-sm {
+	margin-left: -15px;
+}
+
+*/
+
+.report-card {
+	/*margin: 1.4em 0;*/
+	border-bottom: 1px solid black;
+	margin: 1.4em 0px;
+	padding-bottom: 1.4em;
+	padding-left: 0;
+}
+
+.report-teaser a {
+	color: black;
+}
+
+.report-teaser a:hover {
+	color: black;
+}
+
+#weiterlesen {
+	font-weight: bolder !important;
+}

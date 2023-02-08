@@ -1,0 +1,38 @@
+.akteurinnen {
+	font-family: roboto;
+}
+.actor-searchbar {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.actor-name {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0.6em;
+}
+.actor-locations,
+.actor-offers {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.actor-locations {
+	margin-bottom: 0.8em;
+}
+.actor-card > a,
+.actor-card > a:hover {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+ul.actor-list {
+	margin-left: 0px;
+}
+ul.actor-list li {
+	border-bottom: 1px solid black;
+	margin: 1.4em 0px;
+	padding-bottom: 1.4em;
+}
+#ibkv-actor-list.loading {
+  opacity: 0.5;
+}

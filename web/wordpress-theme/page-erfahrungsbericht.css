@@ -1,0 +1,41 @@
+/*
+
+.page-erfahrungsbericht {
+}
+
+.report-name {
+	padding-bottom: 0.75em;
+}
+
+.page-erfahrungsbericht .report-detail-card {
+	margin-bottom: 2.5em;
+}
+
+p.report-text {
+	color: black !important;
+	font-family: "Times New Roman", Times, serif !important;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.button-back {
+	margin-bottom: 50px;
+}
+
+*/
+
+@media (min-width: 480px) {
+	
+	
+	.page-id-139 div#content.site-content div.ast-container {
+		background: #ededed;
+		margin-top: 3rem;
+		color: black;
+	}
+
+	.page-id-139 div.content-area {
+		padding: 0 2rem;
+	}
+}
