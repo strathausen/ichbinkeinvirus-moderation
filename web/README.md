@@ -1,4 +1,4 @@
-# shellfish
+# ickbinkeinvirus moderation web
 
 ## Project setup
 ```

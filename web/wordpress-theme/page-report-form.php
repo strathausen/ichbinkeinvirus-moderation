@@ -35,7 +35,6 @@ get_header(); ?>
 		<article class="page type-page status-publish ast-article-single">
 <?php
 // If the form is submitted
-/*
 if (
 	isset($_POST['report-name']) && $_POST['report-name'] !== '' &&
 	isset($_POST['report-email']) && $_POST['report-email'] !== '' &&
@@ -126,7 +125,6 @@ Bitte beachte, dass die * - Felder ausgefüllt sein müssen.<br><br>
 
 <?php
 }
-*/
 ?>
 		</article>
 

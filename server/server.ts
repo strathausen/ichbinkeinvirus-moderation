@@ -28,23 +28,22 @@ type ILoginQuery = {
   pass: string
 }
 
-fastify.get('/user', async (req, res) => {
+fastify.get('/user', async (_req, _res) => {
   // TODO get user id from session
   const db = await getDb()
-  const person = await db.getRepository(User).findOne();
+  const person = await db.getRepository( User).findOne();
   const {user_email, user_nicename, user_url} = person
   return {user_email, user_nicename, user_url}
 })
 
-fastify.post<{Body: ILoginQuery}>('/login', async (req, res) => {
-  // TODO check password
+fastify.post<{Body: ILoginQuery}>('/login', async (req, _res) => {
   const {user_login, pass} = req.body
-  const db = await getDb()
-  const user = await db.getRepository(User).findOne({user_login})
+  const dbase = await getDb()
+  const user = await dbase.getRepository(User).findOne({user_login})
   return {ok: 'ok'}
 })
 
-fastify.post<{Body: Partial<Report>, Params: {id: string}}>('/report/:id', async (req, res) => {
+fastify.post<{Body: Partial<Report>, Params: {id: string}}>('/report/:id', async (req, _res) => {
   const db = await getDb()
   const update = _.omit(req.body, 'id')
   if (update.status === ReportStatus.OK) {

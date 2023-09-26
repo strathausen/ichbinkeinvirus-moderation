@@ -1,15 +1,16 @@
 <template>
-  <div class="app-container" :style="{'--main-color': themeColor.color.fg, '--background-color': themeColor.color.bg}">
+  <div class="app-container" :style="{
+    '--main-color': themeColor.color.fg,
+    '--background-color': themeColor.color.bg}">
     <div id="nav">
       <theme-color />
-      <!--<router-link to="/about">login</router-link>-->
     </div>
     <router-view class="main-container"/>
   </div>
 </template>
 
 <script lang="ts">
-import Vue, { defineComponent } from 'vue'
+import _Vue, { defineComponent } from 'vue'
 import ThemeColor from './components/ThemeColor.vue'
 import { useThemeColors } from './compose/useThemeColors'
 
